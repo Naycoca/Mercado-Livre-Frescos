@@ -29,6 +29,4 @@ public class SectionController {
         List<SectionSearchDTO> listSectionsByWarehouse = sectionService.findSection(id);
         return ResponseEntity.ok().body(listSectionsByWarehouse);
     }
-
-
 }
