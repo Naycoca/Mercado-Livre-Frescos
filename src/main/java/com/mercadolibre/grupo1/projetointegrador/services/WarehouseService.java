@@ -1,5 +1,6 @@
 package com.mercadolibre.grupo1.projetointegrador.services;
 
+import com.mercadolibre.grupo1.projetointegrador.dtos.SectionSearchDTO;
 import com.mercadolibre.grupo1.projetointegrador.dtos.WarehouseProductDTO;
 import com.mercadolibre.grupo1.projetointegrador.entities.Warehouse;
 import com.mercadolibre.grupo1.projetointegrador.exceptions.NotFoundException;
@@ -41,4 +42,6 @@ public class WarehouseService {
                 .orElseThrow(() ->
                         new EntityNotFoundException(errorMessage));
     }
+
+
 }

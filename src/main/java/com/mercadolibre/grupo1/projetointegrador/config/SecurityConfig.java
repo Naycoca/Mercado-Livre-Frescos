@@ -38,7 +38,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
             BASE_URL + "/list/**",
             BASE_URL + "/due-date",
             BASE_URL + "/due-date/list",
-            BASE_URL + "/warehouse"
+            BASE_URL + "/warehouse",
+            BASE_URL + "/section"
     };
 
     private static final String[] CUSTOMER_REQUESTS = {
@@ -98,12 +99,13 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Override
     public void configure(WebSecurity web) throws Exception {
-        web.ignoring().antMatchers("h2-console/**");
+        web.ignoring().antMatchers("/h2-console/**");
     }
 
     private JWTValidationFilter getValidationFilter() throws Exception {
         return new JWTValidationFilter(authenticationManagerBean(), userDetailsService, jwtUtils, exceptionResolver);
     }
+
 
     @Bean
     CorsConfigurationSource corsConfigurationSource(){
