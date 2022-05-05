@@ -31,7 +31,7 @@ Endpoints do Projeto Integrador
 
 [X] [Requisito 05](https://drive.google.com/file/d/1yiEzdwI87K7AO9bgPffHbb0DPjVKM-oP/view)
 
-[X] [Requisito 06] (https://drive.google.com/file/d/12fkJ-YJnQPDsd_ANsg-aCgMmXpRc-Sg2/view)
+[X] [Requisito 06](https://drive.google.com/file/d/12fkJ-YJnQPDsd_ANsg-aCgMmXpRc-Sg2/view) 
 
 ## Ferramentas e Tecnologias
 - [Java](https://docs.oracle.com/en/java/)
