@@ -60,6 +60,7 @@ public class WarehouseServiceTest {
         createWarehouse.setTotalQuantity(55L);
 
         return Arrays.asList(createWarehouse);
+
     }
 
     @Test

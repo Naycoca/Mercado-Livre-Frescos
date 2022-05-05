@@ -30,7 +30,7 @@ public class SectionService {
     }
 
     /**
-     * Busca a lista de sessões por armazem
+     * Busca a lista de sessões com espaço disponível por armazém
      * @author Nayara Coca
      */
     public List<SectionSearchDTO> findSection(Long warehousesId){
