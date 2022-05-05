@@ -31,8 +31,10 @@ public interface SectionRepository extends JpaRepository<Section, Long> {
                     "from Warehouse w inner join Section s on w.id = s.warehouse.id " +
                     "inner join InboundOrder i on s.id = i.section.id " +
                     "inner join BatchStock b on i.id = b.inboundOrder.id " +
-                    "inner join Product p on p.id = b.product.id where w.id = :warehousesId" +
+                    "inner join Product p on p.id = b.product.id " +
+                    "where w.id = :warehousesId" +
                     " group by s")
     List<SectionSearchDTO> findByWarehouseId(Long warehousesId);
+
     Optional<Section> findById(Long id);
 }

@@ -2,7 +2,6 @@ package com.mercadolibre.grupo1.projetointegrador.services;
 
 import com.mercadolibre.grupo1.projetointegrador.dtos.SectionDTO;
 import com.mercadolibre.grupo1.projetointegrador.dtos.SectionSearchDTO;
-import com.mercadolibre.grupo1.projetointegrador.entities.Product;
 import com.mercadolibre.grupo1.projetointegrador.entities.Section;
 import com.mercadolibre.grupo1.projetointegrador.exceptions.EntityNotFoundException;
 import com.mercadolibre.grupo1.projetointegrador.exceptions.NotFoundException;
@@ -30,7 +29,7 @@ public class SectionService {
     }
 
     /**
-     * Busca a lista de sessões com espaço disponível por armazém
+     * Busca a lista de sessões por armazem
      * @author Nayara Coca
      */
     public List<SectionSearchDTO> findSection(Long warehousesId){
