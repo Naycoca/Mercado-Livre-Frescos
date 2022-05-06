@@ -27,7 +27,7 @@ public interface SectionRepository extends JpaRepository<Section, Long> {
 
     @Query(value =
             "select new com.mercadolibre.grupo1.projetointegrador.dtos.SectionSearchDTO" +
-                    "(s.id, s.capacity, cast(sum(b.currentQuantity * p.volume) as double)) " +
+                    "(s.id, s.capacity, cast(s.capacity-(sum(b.currentQuantity * p.volume)) as double)) " +
                     "from Warehouse w inner join Section s on w.id = s.warehouse.id " +
                     "inner join InboundOrder i on s.id = i.section.id " +
                     "inner join BatchStock b on i.id = b.inboundOrder.id " +
